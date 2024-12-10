@@ -26,4 +26,10 @@ SELECT
 FROM Participants;
 
 
+Select * From
+Participants p  join InvitationParticipants ip on p.Id=ip.ParticipantId
+join Invitations i on i.Id= ip.InvitationId
+
+WHERE i.Id=3
+
 
